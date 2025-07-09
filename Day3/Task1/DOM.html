@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Layout with DOM Menu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+    }
+
+    .bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 150px;
+    }
+
+    .menu {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu ul {
+      list-style: circle;
+      text-align: center;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 8px 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <img src="dom.jpg" class="top-right" alt="Top Right Image">
+  <img src="dom.jpg" class="bottom-left" alt="Bottom Left Image">
+
+  <div class="menu" id="menuContainer"></div>
+  <script src="DOM.js"></script>
+</body>
+</html>
